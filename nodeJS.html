@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    版本（小数位代表稳定性）
+    偶数稳定，0.6.x  0.8.x
+    奇数不稳定，0.7.x  0.9.x
+
+    windows下安装
+    下载git
+    node中自带npm，包安装工具
+    node -v，npm -v
+
+    启动web服务器
+    创建server.js
+    const http = require('http');
+	const hostname = '127.0.0.1';
+	const port = 3000;
+	const server = http.createServer((req, res) => {  // 请求，响应
+	  res.statusCode = 200;
+	  res.setHeader('Content-Type', 'text/plain');
+	  res.end('Hello Node\n');
+	});
+	server.listen(port, hostname, () => {
+	  console.log(`Server running at http://${hostname}:${port}/`);
+	});
+	在server.js目录中 node server
+
+	ctrl + c 停掉之前的服务
+
+	命令行工具中，输入node之后可以输入js源码执行，类似于在chrome浏览器中输入js脚本
+	node中全局变量process 
+
+	定义一个var 或者 function 全局，但是在多人协作的时候或者引入多个js的时候，很容易出现代码被覆盖。
+	模块分3个部分：定义，标识，引用
+
+	nodeJS模块分类（文件模块一一对应）
+	核心模块
+	文件模块
+	第三方模块（npm 安装）
+
+	实现模块
+	创建模块
+	导出模块(export)
+	加载模块(import)
+	使用模块
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
